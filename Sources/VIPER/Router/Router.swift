@@ -9,7 +9,7 @@ import TransitionHandler
 
 // MARK: - Router
 
-public class Router: RouterInput {
+open class Router: RouterInput {
 
     // MARK: - Properties
 

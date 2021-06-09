@@ -9,13 +9,13 @@ import TransitionHandler
 
 // MARK: - SettingsRevealableRouter
 
-public class SettingsRevealableRouter: Router {
+open class SettingsRevealableRouter: Router {
 
     /// UIApplicationOpenURLProtocol instance
-    let applicationOpenURL: UIApplicationOpenURLProtocol
+    public let applicationOpenURL: UIApplicationOpenURLProtocol
 
     /// Bundle instance
-    let bundle: Bundle
+    public let bundle: Bundle
 
     // MARK: - Initializers
 
@@ -33,9 +33,14 @@ public class SettingsRevealableRouter: Router {
         self.bundle = bundle
         super.init(transitionHandler: transitionHandler)
     }
+}
+
+// MARK: - SettingsRevealableRouterInput
+
+extension SettingsRevealableRouter: SettingsRevealableRouterInput {
 
     /// Open URL settings with bundle
-    final func openSettings() {
+    public func openSettings() {
         guard
             let bundleIdentifier = bundle.bundleIdentifier,
             let settingsUrl = URL(string: UIApplication.openSettingsURLString + bundleIdentifier)
