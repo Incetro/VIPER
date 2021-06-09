@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		209A01F4D4ACBDED522137BF /* Pods_VIPER_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F51ADA5A42EF1173ACF913 /* Pods_VIPER_IOS.framework */; platformFilter = ios; };
+		33F3B08F2670D13300C21E88 /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F3B08B2670D13300C21E88 /* ContentManager.swift */; };
+		33F3B0902670D13300C21E88 /* ContentManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F3B08C2670D13300C21E88 /* ContentManagerView.swift */; };
+		33F3B0912670D13300C21E88 /* IntermediateContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F3B08D2670D13300C21E88 /* IntermediateContentManager.swift */; };
+		33F3B0922670D13300C21E88 /* GeneralContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F3B08E2670D13300C21E88 /* GeneralContentManager.swift */; };
 		CB11240E256BF9AE00215E47 /* VIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB30D6C9256ADB0C00EE2C61 /* VIPER.framework */; };
 		CB112527256C0A8700215E47 /* MainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1124EF256C09B400215E47 /* MainTests.swift */; };
 		CB30D71D256ADE2E00EE2C61 /* VIPER.h in Headers */ = {isa = PBXBuildFile; fileRef = CB30D71B256ADE2E00EE2C61 /* VIPER.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -53,6 +57,10 @@
 		083D414A32EEB8A581235DAE /* Pods_VIPER_IOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_IOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AACDEF8ABA555A47A2DCA5C /* Pods-VIPER IOS-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER IOS-Tests.debug.xcconfig"; path = "Target Support Files/Pods-VIPER IOS-Tests/Pods-VIPER IOS-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		29849E6C9334F9E97277D7F0 /* Pods-VIPER IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER IOS.release.xcconfig"; path = "Target Support Files/Pods-VIPER IOS/Pods-VIPER IOS.release.xcconfig"; sourceTree = "<group>"; };
+		33F3B08B2670D13300C21E88 /* ContentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
+		33F3B08C2670D13300C21E88 /* ContentManagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentManagerView.swift; sourceTree = "<group>"; };
+		33F3B08D2670D13300C21E88 /* IntermediateContentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntermediateContentManager.swift; sourceTree = "<group>"; };
+		33F3B08E2670D13300C21E88 /* GeneralContentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralContentManager.swift; sourceTree = "<group>"; };
 		62B5B7C6EBA50F044A9C6C0A /* Pods-VIPER IOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER IOS-Tests.release.xcconfig"; path = "Target Support Files/Pods-VIPER IOS-Tests/Pods-VIPER IOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		73F51ADA5A42EF1173ACF913 /* Pods_VIPER_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9049A43F0A8B61DA9B98D7AC /* Pods-VIPER IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER IOS.debug.xcconfig"; path = "Target Support Files/Pods-VIPER IOS/Pods-VIPER IOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +124,17 @@
 				62B5B7C6EBA50F044A9C6C0A /* Pods-VIPER IOS-Tests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		33F3B08A2670D13300C21E88 /* ContentManager */ = {
+			isa = PBXGroup;
+			children = (
+				33F3B08B2670D13300C21E88 /* ContentManager.swift */,
+				33F3B08C2670D13300C21E88 /* ContentManagerView.swift */,
+				33F3B08D2670D13300C21E88 /* IntermediateContentManager.swift */,
+				33F3B08E2670D13300C21E88 /* GeneralContentManager.swift */,
+			);
+			path = ContentManager;
 			sourceTree = "<group>";
 		};
 		CB1123F6256BF82700215E47 /* Tests */ = {
@@ -237,6 +256,7 @@
 		DE37E79425BF5E4E00942A68 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				33F3B08A2670D13300C21E88 /* ContentManager */,
 				DE37E79525BF5E7D00942A68 /* ViewInput.swift */,
 				DE03E7E925CC491E007654E6 /* ViewOutput.swift */,
 			);
@@ -441,11 +461,15 @@
 				DE03E7EA25CC491E007654E6 /* ViewOutput.swift in Sources */,
 				DE6842F825CC7D8000BD93D2 /* UIApplicationOpenURLProtocol.swift in Sources */,
 				DE03E7D425CC2462007654E6 /* UIApplication.swift in Sources */,
+				33F3B0902670D13300C21E88 /* ContentManagerView.swift in Sources */,
+				33F3B08F2670D13300C21E88 /* ContentManager.swift in Sources */,
+				33F3B0922670D13300C21E88 /* GeneralContentManager.swift in Sources */,
 				DE03E7F025CC4958007654E6 /* InteractorOutput.swift in Sources */,
 				DE6842E525CC6EB400BD93D2 /* SettingsRevealableRouterInput.swift in Sources */,
 				DE37E79625BF5E7D00942A68 /* ViewInput.swift in Sources */,
 				DE6842F025CC797A00BD93D2 /* PresenterInput.swift in Sources */,
 				DE6842EA25CC6F6400BD93D2 /* SettingsRevealableRouter.swift in Sources */,
+				33F3B0912670D13300C21E88 /* IntermediateContentManager.swift in Sources */,
 				DE03E7DD25CC284B007654E6 /* RouterInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
