@@ -9,7 +9,7 @@ import TransitionHandler
 
 // MARK: - RouterInput
 
-public protocol RouterInput {
+public protocol RouterInput: AnyObject {
 
     /// Transition handler instance
     var transitionHandler: TransitionHandler { get }

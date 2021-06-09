@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - InteractorOutput
 
-public protocol InteractorOutput {
+public protocol InteractorOutput: AnyObject {
 
     /// Method for presenters which receives Interactor's errors
     ///

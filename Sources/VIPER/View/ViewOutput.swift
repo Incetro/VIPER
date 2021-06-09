@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - ViewOutput
 
-public protocol ViewOutput {
+public protocol ViewOutput: AnyObject {
 
     /// Said to view output that it's necesarry to
     /// update current view state with some new data

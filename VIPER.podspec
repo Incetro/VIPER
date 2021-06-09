@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   spec.name                  = 'VIPER'
   spec.module_name           = 'VIPER'
-  spec.version               = '1.2.1'
+  spec.version               = '1.2.2'
   spec.license               = 'MIT'
   spec.authors               = { 'incetro' => 'incetro@ya.ru' }
   spec.homepage              = "https://github.com/Incetro/VIPER.git"
