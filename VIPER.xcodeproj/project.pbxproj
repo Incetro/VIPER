@@ -14,7 +14,6 @@
 		CB11240E256BF9AE00215E47 /* VIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB30D6C9256ADB0C00EE2C61 /* VIPER.framework */; };
 		CB112527256C0A8700215E47 /* MainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1124EF256C09B400215E47 /* MainTests.swift */; };
 		CB22D93E26B8823900F5BCE3 /* TransitionHandler.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB22D93D26B8823900F5BCE3 /* TransitionHandler.xcframework */; };
-		CB22D93F26B8823900F5BCE3 /* TransitionHandler.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB22D93D26B8823900F5BCE3 /* TransitionHandler.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB30D71D256ADE2E00EE2C61 /* VIPER.h in Headers */ = {isa = PBXBuildFile; fileRef = CB30D71B256ADE2E00EE2C61 /* VIPER.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE03E7D425CC2462007654E6 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03E7D325CC2462007654E6 /* UIApplication.swift */; };
 		DE03E7DD25CC284B007654E6 /* RouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03E7DC25CC284B007654E6 /* RouterInput.swift */; };
@@ -47,7 +46,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				DE9D164A25C5AAA200BB5413 /* (null) in Embed Frameworks */,
-				CB22D93F26B8823900F5BCE3 /* TransitionHandler.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
