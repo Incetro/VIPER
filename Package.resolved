@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "transition-handler",
+        "repositoryURL": "https://github.com/Incetro/transition-handler.git",
+        "state": {
+          "branch": "main",
+          "revision": "f50f716b3c5d89f360f745cf1074d2b0d9c19200",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
